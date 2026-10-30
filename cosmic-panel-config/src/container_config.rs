@@ -143,18 +143,19 @@ impl Default for CosmicPanelContainerConfig {
                     output: CosmicPanelOuput::All,
                     background: CosmicPanelBackground::ThemeDefault,
                     plugins_wings: Some((
+                        // Bun OS: Omarchy waybar layout: menu button and numbered workspaces left, clock
+                        // centre, tray and status right (the Dock is not in the default entries).
                         vec![
-                            "com.system76.CosmicPanelWorkspacesButton".to_string(),
                             "com.system76.CosmicPanelAppButton".to_string(),
+                            "com.system76.CosmicAppletWorkspaces".to_string(),
                         ],
                         vec![
-                            "com.system76.CosmicAppletInputSources".to_string(),
-                            "com.system76.CosmicAppletA11y".to_string(),
                             "com.system76.CosmicAppletStatusArea".to_string(),
                             "com.system76.CosmicAppletTiling".to_string(),
-                            "com.system76.CosmicAppletAudio".to_string(),
+                            "com.system76.CosmicAppletInputSources".to_string(),
                             "com.system76.CosmicAppletBluetooth".to_string(),
                             "com.system76.CosmicAppletNetwork".to_string(),
+                            "com.system76.CosmicAppletAudio".to_string(),
                             "com.system76.CosmicAppletBattery".to_string(),
                             "com.system76.CosmicAppletNotifications".to_string(),
                             "com.system76.CosmicAppletPower".to_string(),
